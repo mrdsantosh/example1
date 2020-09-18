@@ -1,9 +1,11 @@
 # cloudbuild.yaml
 steps:
+# Build the maven package
 -  name: maven:3-jdk-8
    entrypoint: mvn
    args:
    - package
+# Deploy to App Engine
 -  name: gcr.io/cloud-builders/gcloud
    args:
    - app
