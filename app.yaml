@@ -1,5 +1,5 @@
 # app.yaml
-runtime: java8
+runtime: java11
 env: standard
 runtime_config:
    jdk: openjdk8
